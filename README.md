@@ -1,43 +1,48 @@
 # Vendor Performance Analysis
 
 ## Project Overview
-This project focuses on analyzing vendor performance using sales and purchase data.  
-The objective is to identify top-performing vendors, profitability, inventory movement, and sales efficiency using data analysis and visualization techniques.
 
-The analysis was performed using Python in Jupyter Notebook and the results were visualized in Power BI to build an interactive dashboard.
+The **Vendor Performance Analysis** project focuses on analyzing vendor sales and purchase data to evaluate vendor efficiency, profitability, and inventory performance.
+
+The project uses **Python-based data analysis** in Jupyter Notebook and an **interactive Power BI dashboard** to identify business insights such as sales performance, profit margins, and stock turnover.
+
+The goal is to help businesses understand which vendors perform best and where improvements can be made.
 
 ---
 
 ## Project Objectives
+
 - Analyze vendor sales performance
-- Identify profitable vendors and products
-- Understand purchase vs sales behavior
-- Detect unsold inventory value
-- Evaluate stock turnover and profit margin
+- Identify the most profitable vendors
+- Compare purchase vs sales trends
+- Detect unsold inventory
+- Evaluate vendor efficiency using stock turnover and profit margin
 
 ---
 
-## Dataset Features
+## Dataset Description
 
-The dataset contains vendor and product level performance metrics such as:
+The dataset contains vendor-level product sales and purchase information.
 
-- VendorNumber
-- VendorName
-- Brand
-- Description
-- PurchasePrice
-- ActualPrice
-- TotalPurchaseQuantity
-- TotalPurchaseDollars
-- TotalSalesQuantity
-- TotalSalesDollars
-- GrossProfit
-- ProfitMargin
-- StockTurnover
-- SalesToPurchaseRatio
-- UnsoldInventoryValue
-- FreightCost
-- TotalExciseTax
+### Key Columns
+
+| Column Name | Description |
+|-------------|-------------|
+| VendorNumber | Unique vendor ID |
+| VendorName | Vendor company name |
+| Brand | Product brand |
+| Description | Product description |
+| PurchasePrice | Price at which product was purchased |
+| ActualPrice | Selling price |
+| TotalPurchaseQuantity | Total quantity purchased |
+| TotalPurchaseDollars | Total purchase amount |
+| TotalSalesQuantity | Total quantity sold |
+| TotalSalesDollars | Total sales revenue |
+| GrossProfit | Profit generated |
+| ProfitMargin | Profit percentage |
+| StockTurnover | Inventory turnover ratio |
+| SalesToPurchaseRatio | Sales vs purchase efficiency |
+| UnsoldInventoryValue | Value of unsold inventory |
 
 ---
 
@@ -56,33 +61,45 @@ The dataset contains vendor and product level performance metrics such as:
 
 ## Project Workflow
 
-### 1 Data Collection
-Raw vendor sales and purchase dataset was collected.
+### 1. Data Collection
+Raw vendor dataset was obtained containing sales and purchase records.
 
-### 2 Data Cleaning
-Data cleaning was performed using Python:
+### 2. Data Cleaning
+Data preprocessing was performed to ensure consistency and remove errors.
+
+Steps included:
+
 - Handling missing values
-- Removing inconsistencies
-- Formatting columns
+- Correcting data types
+- Removing duplicates
 
-### 3 Exploratory Data Analysis (EDA)
-EDA was performed to understand:
-- Sales trends
-- Vendor performance
+### 3. Exploratory Data Analysis (EDA)
+EDA was performed to understand patterns in the dataset including:
+
+- Vendor sales distribution
 - Profit margins
-- Inventory movement
+- Inventory turnover
+- Vendor profitability
 
-### 4 Database Integration
-Clean data was stored into a database for structured analysis.
+### 4. Data Storage
+The cleaned dataset was prepared for further analysis and database integration.
 
-### 5 Power BI Dashboard
-An interactive dashboard was created to visualize vendor performance metrics.
+### 5. Dashboard Creation
+An interactive dashboard was built in **Power BI** to visualize vendor performance metrics.
 
 ---
 
-## Power BI Dashboard Insights
+## Power BI Dashboard
 
-The dashboard includes the following KPIs:
+An interactive dashboard was developed using **Microsoft Power BI** to monitor vendor performance and business metrics.
+
+### Dashboard Preview
+
+https://github.com/shreyash818/Vendor-Performance-Analysis/blob/main/Vendors%20Performance%20Data%20.jpeg
+
+### Dashboard KPIs
+
+The dashboard displays important business KPIs such as:
 
 - Total Sales
 - Total Purchases
@@ -91,62 +108,63 @@ The dashboard includes the following KPIs:
 - Unsold Inventory Value
 
 ### Key Visualizations
+
+The dashboard includes the following charts:
+
 - Vendor Sales Comparison
 - Profit Margin by Vendor
 - Sales vs Purchase Ratio
 - Stock Turnover Analysis
-- Scatter Plot for Vendor Profitability
+- Vendor Profitability Scatter Plot
+- Donut Chart for Sales Distribution
 
----
+### Dashboard Filters (Slicers)
 
-## Repository Structure
-Vendor-Performance-Analysis
-│
-├── Vendor performance Analysis.ipynb
-├── Exploratory Data Analysis.ipynb
-├── Convert data intoDB.ipynb
-├── dataset.csv
-└── README.md
+Users can filter data using:
 
+- Vendor Name
 
 ---
 
 ## Key Insights
 
-- Some vendors generate higher sales but lower profit margins.
-- Certain vendors have high unsold inventory value.
-- Stock turnover varies significantly between vendors.
-- Profitability depends on pricing strategy and sales volume.
+Some important insights from the analysis:
+
+- Certain vendors generate high revenue but lower profit margins.
+- Some vendors have significant unsold inventory value.
+- Vendors with higher stock turnover generally show better sales performance.
+- Profitability varies based on pricing strategy and purchase volume.
+
+---
+
+## Repository Structure
+
+Vendor-Performance-Analysis
+
+- Vendor performance Analysis.ipynb
+- Exploratory Data Analysis.ipynb
+- Convert data intoDB.ipynb
+- dataset.csv
+- dashboard.png
+- README.md
 
 ---
 
 ## Future Improvements
 
-- Add predictive analysis
-- Implement vendor ranking system
-- Automate dashboard refresh
-- Deploy dashboard for real-time monitoring
+Future enhancements for this project may include:
+
+- Predictive analysis using machine learning
+- Vendor performance ranking model
+- Automated data pipeline
+- Real-time dashboard integration
 
 ---
-## Power BI Dashboard
-
-The Power BI dashboard provides an interactive visualization of vendor performance including sales, purchases, profitability, and inventory metrics.
-
-### Dashboard Preview
-
-[![Vendor Dashboard](dashboard.png](https://github.com/shreyash818/Vendor-Performance-Analysis/blob/main/Vendors%20Performance%20Data%20.jpeg)
-
-### Dashboard Highlights
-
-- Total Sales Performance
-- Vendor Profit Margin Comparison
-- Sales vs Purchase Ratio
-- Stock Turnover Analysis
-- Unsold Inventory Value
-
-The dashboard allows users to filter vendors and analyze their performance using interactive charts and slicers.
 
 ## Author
 
-Shreyash Yadav  
+**Shreyash Yadav**
+
 Aspiring Data Analyst
+
+Skills: Python | SQL | Power BI | Data Analysis | Data Visualization
